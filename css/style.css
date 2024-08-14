@@ -1,0 +1,164 @@
+body {
+    background-color: rgb(26, 127, 189);
+    margin: 0 auto;
+    padding-top: 25px;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+/* Cabeçalho */
+
+header {
+    display: flex;
+    justify-content: space-between ;
+    justify-items: center;
+    padding-bottom: 20px;
+    
+    border-bottom: 2px solid rgb(148,195,224);
+}
+
+header img {
+    max-width: 150px;
+    max-height: auto;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+@media only screen and (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+    header ul {
+        display: none;
+    }
+
+    button {
+        display: none;
+    }
+    
+    #menu-toggle.active + nav {
+        display: block;
+    }
+
+    .lista-menu {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+    }
+    
+    .lista-menu.open {
+        max-height: 500px; /* Ajuste o valor conforme necessário */
+    }
+    
+
+  }
+
+
+
+.lista-menu {
+    list-style: none;
+}
+
+.lista-menu li {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.lista-menu li a {
+    font-weight: 500;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+header button {
+    width: 160px;
+    height: 40px;
+
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 700;
+
+    color: #FFFFFF;
+    background-color: black;
+
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+section {
+    display: flex;
+}
+
+
+/* Formulario */
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+.container_text {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    gap: 10rem;
+}
+
+.container_text h1 {
+    font-weight: 700;
+    font-size: 40px;
+    color: #1A7FBD;
+}
+
+.container_text h2 {
+    font-size: 20px;
+}
