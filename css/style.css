@@ -3,6 +3,7 @@ body {
     margin: 0 auto;
     padding-top: 25px;
     font-family: "Hanken Grotesk", sans-serif;
+    
 }
 /* Cabeçalho */
 
@@ -145,20 +146,43 @@ button:hover {
     background-color: #0056b3;
 }
 
+/* MULHER */
 
-.container_text {
-    display: flex;
-    background-color: white;
+.grid_container {
+    display: grid;
+    grid-template-columns: auto auto;
     align-items: center;
-    gap: 10rem;
+    gap: 5rem;
+    padding: 0 5rem;
+
+    background-color: #FFFFFF;
 }
 
-.container_text h1 {
-    font-weight: 700;
-    font-size: 40px;
-    color: #1A7FBD;
+.img_container  {
+    width: 100%; /* O contêiner ocupará 80% da largura da tela */
+    max-width: 1200px; /* Limite de largura máxima */
+    margin: 0 auto; /* Centraliza o contêiner */
 }
 
-.container_text h2 {
-    font-size: 20px;
+.img_container img {
+    width: 100%; /* A imagem se ajusta à largura do contêiner */
+    height: auto;
 }
+
+.text_container {
+    margin: 50px 50px;
+}
+
+.text_container h1 {
+    color: #007BFF;
+}
+
+/* quadrados */
+
+.blocos {
+    display: flex;
+    
+    border: 5px solid black;
+    
+}
+
