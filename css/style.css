@@ -1,10 +1,26 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Hanken Grotesk", sans-serif;
+
+    
+}
+
+:root {
+    --color-copy: #000000;
+    --color-primary: #6CBFF2;
+    --color-segudary: #F9F9F9;
+    --default-padding: 1rem;
+  }
+
+
 body {
     background-color: rgb(26, 127, 189);
     margin: 0 auto;
     padding-top: 25px;
-    font-family: "Hanken Grotesk", sans-serif;
     
 }
+
 /* Cabeçalho */
 
 header {
@@ -147,42 +163,109 @@ button:hover {
 }
 
 /* MULHER */
-
-.grid_container {
-    display: grid;
-    grid-template-columns: auto auto;
-    align-items: center;
-    gap: 5rem;
-    padding: 0 5rem;
-
-    background-color: #FFFFFF;
+.flex-container-mulher {
+   display: flex;
+   background-color: var(--color-segudary);
+   justify-content: center;
 }
 
-.img_container  {
-    width: 100%; /* O contêiner ocupará 80% da largura da tela */
-    max-width: 1200px; /* Limite de largura máxima */
-    margin: 0 auto; /* Centraliza o contêiner */
+.img {
+    padding-left: 200px;
+    width: 35%;
 }
 
-.img_container img {
-    width: 100%; /* A imagem se ajusta à largura do contêiner */
-    height: auto;
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
 }
 
-.text_container {
-    margin: 50px 50px;
+.title h1 { 
+    font-size: 48px;
+    color: var(--color-primary);
 }
 
-.text_container h1 {
-    color: #007BFF;
+.title h3 {
+    font-size: 25px;
+    color: var(--color-copy);
+    width: 30%;
+}
+
+.title p {
+    font-size: 20px;
+    width: 40%;
+}
+
+hr {
+    width: 40%;
+    color: #e2e2e2;
+    background-color: #e2e2e2;
+}
+
+.sub-text {
+    font-size: 20px;
+    font-weight: 700;
 }
 
 /* quadrados */
 
 .blocos {
+    margin: -20;
     display: flex;
-    
-    border: 5px solid black;
-    
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    background-color: var(--color-segudary);
+    text-align: center;
+    font-size: 20px;
+    padding: 20px 0;
 }
 
+.flex-oportunidade {
+    width: 400px;
+    height: 300px;
+    padding: 40px 0;
+    background-image: url("../imagens/1.png");
+    background-size: 30px; /* POR QUE O TAMANHO DESSA IMAGEM TA ASSIM (PESQUISAR DEPOIS )*/
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-position-y: 20px;
+    border: 2px solid var(--color-segudary);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+}
+
+
+
+.flex-comunidade {
+    width: 400px;
+    height: 300px;
+    padding: 40px 0;
+    background-image: url("../imagens/2.png");
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-position-y: 20px;
+    border: 2px solid var(--color-segudary);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+}
+
+
+.flex-experiencia {
+    width: 400px;
+    height: 300px;
+    padding: 40px 0;
+    background-image: url("../imagens/3.png");
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-position-y: 20px;
+    border: 2px solid var(--color-segudary);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+}
