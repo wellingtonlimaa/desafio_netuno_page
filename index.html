@@ -10,11 +10,17 @@
       href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Poppins:wght@200;300;400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <title>Landing Page Netuno</title>
   </head>
   <body>
     <!-- Cabeçalho -->
-    <header class="flex-container">
+    <header class="flex-container-header">
       <img src="imagens/logo.svg" alt="Logo Netuno" />
 
       <nav>
@@ -34,88 +40,152 @@
       <button>Processo Seletivo</button>
     </header>
 
-    <!-- Formulario  -->
-    <section>
-      <form action="#" method="post">
-        <span>Formulário de Cadastro</span>
-        <br />
-        <span>Preencha seus dados</span>
-        <label for="nome">Nome completo</label>
-        <input type="text" id="nome" name="nome" required />
+    <!-- DIV PRINCIPAL 1-->
+    <div>
+      <!-- Formulario  -->
+      <section>
+        <form action="#" method="post">
+          <span>Formulário de Cadastro</span>
+          <br />
+          <span>Preencha seus dados</span>
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" name="nome" required />
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
 
-        <label for="estado">Estado:</label>
-        <input type="estado" name="estado" id="estado" />
-      </form>
-    </section>
+          <label for="estado">Estado:</label>
+          <input type="estado" name="estado" id="estado" />
+        </form>
+      </section>
 
-    <!-- Começando na imagem mulher  -->
-    <div class="flex-container-mulher">
-      <div class="img">
-        <img src="./imagens/mulher.png" alt="">
-      </div>
+      <div class="flex-container-projeto">
+        <div class="img-projeto">
+          <img src="./imagens/Group 98.png" alt="" />
+        </div>
 
-      <div class="title">
-        <h1>O Problema</h1>
-        <h3>
-          Falta de profissionais de TI no Mercado brasileiro: um problema que
-          demanda atenção urgente.
-        </h3>
-          <hr>
-        <div class="text">
-          <p>
-            Estima-se que atualmente tenhamos um déficit de 408 mil postos de
-            trabalho, com perdas se acumulando na casa dos R$167 bilhões, de
-            acordo com a Softex, uma organização social voltada ao fomento da área
-            de TI. 
+        <div class="text-projeto">
+          <h1>O Projeto</h1>
+
+          <p class="text-primario">
+            Com o “novo normal” causado pela pandemia dos últimos anos, mais
+            empresas no mundo todo têm aberto oportunidades no modelo Home
+            Office. Alinhado a depreciação da moeda local, temos um alto índice
+            de profissionais migrando para trabalhos em outros países.
           </p>
-          <p class="sub-text">Um dos principais fatores dessa falta de profissionais é o
-            êxodo de profissionais para o exterior.
+          <p class="text-secundario">
+            O projeto Netuno, idealizado pela Fasters, tem por objetivo reduzir
+            os estresses causados por recrutamento e turn over na área de
+            tecnologia, bem como gerar oportunidades de carreira para novos
+            profissionais.
           </p>
         </div>
       </div>
     </div>
 
-    <!-- QUADRADOS GRID -->
+    <!-- DIV PRINCIPAL 2-->
+    <div class="container-fluid">
 
-    <div class="blocos">
-      <div class="flex-oportunidade">
-        <h1>Oportunidade</h1>
-        <span
-          >Acreditamos que a combinação de interesse, dedicação e oportunidade
-          pode causar um grande impacto nas pessoas, nas organizações e no
-          mundo.</span
-        >
+      <!-- ROW PROBLEMA -->
+      <div class="row background-gray">
+        <div class="col-2"></div>
+        <div class="col-8">
+
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col">
+                <div class="img">
+                  <img src="./imagens/veia.png" alt="" />
+                </div>
+              </div>
+              <div class="col items-center">
+                <div class="problem-content">
+                  <h1>O Problema</h1>
+                  <p class="subtitle">
+                    Falta de profissionais de TI no Mercado brasileiro: um
+                    problema que demanda atenção urgente.
+                  </p>
+                  <div class="text">
+                    <p>
+                      Estima-se que atualmente tenhamos um déficit de 408 mil
+                      postos de trabalho, com perdas se acumulando na casa dos
+                      R$167 bilhões, de acordo com a Softex, uma organização
+                      social voltada ao fomento da área de TI.
+                    </p>
+                    <p>
+                      Um dos principais fatores dessa falta de profissionais é o
+                      êxodo de profissionais para o exterior.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-2"></div>
       </div>
-      <div class="flex-comunidade">
-        <h1>Comunidade</h1>
-        <span
-          >Acreditamos que a combinação de interesse, dedicação e oportunidade
-          pode causar um grande impacto nas pessoas, nas organizações e no
-          mundo.</span
-        >
+
+      <!-- CARDS ROW -->
+      <div class="row negative-row"> 
+        <div class="col-2"></div>
+        <div class="col-8">
+
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="card-large">
+                  <h1>Oportunidade</h1>
+                  <span>
+                    Acreditamos que a combinação de interesse, dedicação e
+                    oportunidade pode causar um grande impacto nas pessoas, nas
+                    organizações e no mundo.
+                  </span>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card-large">
+                  <h1>Comunidade</h1>
+                  <span>
+                    Dentro de um grupo de pessoas mais experientes e acessíveis,
+                    a curva de aprendizado ocorre de forma mais rápida, fluída e
+                    eficiente.
+                  </span>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card-large">
+                  <h1>Experiencia Real</h1>
+                  <span>
+                    Entendemos que somente as experiências reais poderão trazer
+                    a bagagem que a teoria não o pode fazer.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-2"></div>
       </div>
-      <div class="flex-experiencia">
-        <h1>experiencia</h1>
-        <span
-          >Acreditamos que a combinação de interesse, dedicação e oportunidade
-          pode causar um grande impacto nas pessoas, nas organizações e no
-          mundo.</span
-        >
-      </div>
+      
+      <!-- Jornada -->
+      <div class="row"></div>
+      <div class="col"></div>
     </div>
 
-    <!-- SUA JORNADA -->
+    
 
-    <div class="flex-container-jornada">
-      <div>
-        <h1>Sua Jornada</h1>
-      </div>
-
-      <div></div>
-    </div>
     <script src="script/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
