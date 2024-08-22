@@ -36,7 +36,7 @@ body {
     margin-left: 10px;
 }
 
-.problem-content h1 {
+.problem-content  h1 {
     background: linear-gradient(0deg, #1A7FBD, #6CBFF2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -68,7 +68,7 @@ body {
 
 .card-large {
     width: 100%;
-    min-height: 250px;
+    min-height: 270px;
     box-shadow: 0px 10px 10px 7px #e8e8e8;
     border-radius: 15px;
     text-align: center;
@@ -90,19 +90,19 @@ body {
     font-size: 15px;
 }
 
-.card-large:nth-child(1) h1 {
+.card-large:nth-child(1) .background-numbers{
     background-image: url(../imagens/1.png);
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.card-large:nth-child(2) h1 {
+.card-large:nth-child(2) .background-numbers {
     background-image: url(../imagens/2.png);
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.card-large:nth-child(3) h1 {
+.card-large:nth-child(3) .background-numbers {
     background-image: url(../imagens/3.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -117,9 +117,19 @@ body {
     padding: 45px 0px;
 }
 
-.title-journey img {
-    height: 48px;
-    width: 1100px
+.title-journey h1 {
+    background: linear-gradient(0deg, #1A7FBD, #6CBFF2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+}
+
+.background-title {
+    background-image: url(../imagens/background-title.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .card-journey {
@@ -190,37 +200,32 @@ body {
 /* Cards do objetivos */
 
 
-.content-objectives {
-    width: 100%;
-    background-image: url(../imagens/background-blu.png);
+.background-blue {
+    background-image: url(../imagens/background-blue.png);
+    background-size: cover;
+    padding: 5rem 0;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    
 }
 
 
-.card-objectives {
-    width: 100%;
-    min-height: 250px;
-    border-radius: 15px;
-    text-align: center;
-    padding: 30px 65px;
-    background-color: #FBFBFB;
-    box-sizing: border-box;
-}
-
-.card-objectives span {
-    width: 250px;
-    color: var(--color-copy);
-}
-
-.title-objectives {
+.title-obective {
     display: flex;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
+    padding-bottom: 3rem;
+    color: var(--color-segudary);
+    
+}
+
+.title-obective h1 {
+    font-weight: 600;
 }
 
 
-.title-objectives h1 {
-    color: var(--color-segudary);
-    font-weight: 600;
+.no-shadow {
+    box-shadow: none;
 }
 
