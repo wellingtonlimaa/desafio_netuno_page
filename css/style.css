@@ -109,7 +109,6 @@ body {
 }
 
 /* CARD JORNADA*/
-
 .title-journey {
     display: flex;
     justify-content: center;
@@ -164,7 +163,6 @@ body {
 }
 
 /* Buttom Selection Process */
-
 .button-SelectionProcess {
     display: flex;
     flex-direction: column;
@@ -198,8 +196,6 @@ body {
 
 
 /* Cards do objetivos */
-
-
 .background-blue {
     background-image: url(../imagens/background-blue.png);
     background-size: cover;
@@ -227,5 +223,35 @@ body {
 
 .no-shadow {
     box-shadow: none;
+}
+
+/* FOOTER*/
+.background-black {
+    padding: 8rem 0;
+    color: var(--color-segudary);
+    background-color: var(--color-copy);
+    justify-content: center;
+
+    
+}
+
+.logo-footer {
+    padding-bottom: 10px;
+}
+
+.icon {
+    padding: 5px;
+    text-decoration: none;
+}
+
+.rights-copy {
+    font-weight: 200;
+}
+
+.background-black button {
+    font-weight: 700;
+    border-color: #1A7BB6;
+    border-radius: 8px;
+    padding: 10px 15px;
 }
 
