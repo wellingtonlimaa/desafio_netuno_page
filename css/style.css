@@ -14,7 +14,43 @@
 body {
     background-color: rgb(26, 127, 189);
     margin: 0 auto;
-    padding-top: 25px;
+}
+
+/* Conten Header*/
+.background-header {
+    background-color: rgb(39, 138, 199);
+    border-bottom: 2px solid black;
+    padding: 20px 0;
+}
+.img-logo {
+    padding-top: 10px;
+}
+
+.img-logo img {
+    width: 10rem;
+    height: 2rem;
+}
+
+.list-menu {
+    padding-top: 15px;
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+.list-menu li a {
+    color: var(--color-segudary);
+    text-decoration: none;
+}
+
+.container-fluid button {
+    font-weight: 500;
+    background-color: var(--color-copy);
+    color: var(--color-segudary);
+    border-radius: 8px;
+    border: none;
+    padding: 10px 15px;
+    float: right;
 }
 
 /* Conten Project*/
@@ -27,8 +63,7 @@ body {
 }
 
 .background-projeto img {
-    width: 540px;
-    height: 465px;
+    width: 100%;
 }
 
 .conten-project-copy {
@@ -46,9 +81,6 @@ body {
     background-clip: text;
     color: transparent;
     font-weight: 700;
-}
-
-.conten-project-copy p {
 }
 
 /* Row Problema */
@@ -174,11 +206,13 @@ body {
     justify-items: center;
     align-items: center;
     background-color: #1a7fbd;
+    border: none;
 }
 
 .card-journey img {
     border: 1px solid;
     border-radius: 5px;
+    border: none;
     padding: 8px;
     background: var(--color-segudary);
 }
@@ -222,8 +256,8 @@ body {
 }
 
 .button-SelectionProcess img {
-    width: 210px;
-    height: 30px;
+    width: 13rem;
+    height: 1.875rem;
 }
 
 /* Cards do objetivos */
@@ -252,7 +286,7 @@ body {
     box-shadow: none;
 }
 
-/* FOOTER*/
+/* Footer */
 .background-black {
     padding: 8rem 0;
     color: var(--color-segudary);
@@ -284,6 +318,8 @@ body {
     font-weight: 700;
     border-color: #1a7bb6;
     border-radius: 8px;
+    background-color: var(--color-segudary);
+    color: var(--color-copy);
     padding: 10px 15px;
     float: right;
 }
