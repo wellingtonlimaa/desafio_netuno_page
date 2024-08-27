@@ -63,7 +63,8 @@ body {
 }
 
 .background-projeto img {
-    width: 100%;
+    width: 380px;
+    height: 350px;
 }
 
 .conten-project-copy {
@@ -94,6 +95,10 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.img-problem img {
+    width: 100%;
 }
 
 .problem-content {
