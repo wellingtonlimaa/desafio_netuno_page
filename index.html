@@ -26,7 +26,7 @@
                 <div class="col-sm-8">
                     <div class="row">
                         <div class="col img-logo">
-                            <img src="imagens/logo.svg" alt="Logo Netuno" />
+                            <img src="imagens/logo-netuno.png" alt="Logo Netuno" />
                         </div>
 
                         <div class="col-auto">
@@ -40,8 +40,8 @@
                             </nav>
                         </div>
 
-                        <div class="col d-flex">
-                            <button>Processo Seletivo</button>
+                        <div class="col">
+                            <button class="button-black">Processo Seletivo</button>
                         </div>
                     </div>
                 </div>
@@ -50,34 +50,104 @@
         </div>
 
         <!-- DIV PRINCIPAL 1-->
-        <div>
-            <!-- Formulario  -->
-            <section>
-                <form action="#" method="post">
-                    <span>Formulário de Cadastro</span>
-                    <br />
-                    <span>Preencha seus dados</span>
-                    <label for="nome">Nome completo</label>
-                    <input type="text" id="nome" name="nome" required />
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required />
+        <!-- Formulario  -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <div class="col">
+                        <img src="" alt="" />
+                    </div>
+                    <div class="col formulario">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="exampleInputEmail1"
+                                    aria-describedby="emailHelp"
+                                    placeholder="Enter email"
+                                />
+                                <small id="emailHelp" class="form-text text-muted"
+                                    >We'll never share your email with anyone else.</small
+                                >
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input
+                                    type="password"
+                                    class="form-control"
+                                    id="exampleInputPassword1"
+                                    placeholder="Password"
+                                />
+                            </div>
+                            <div class="form-group form-check">
+                                <input
+                                    type="checkbox"
+                                    class="form-check-input"
+                                    id="exampleCheck1"
+                                />
+                                <label class="form-check-label" for="exampleCheck1"
+                                    >Check me out</label
+                                >
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
 
-                    <label for="estado">Estado:</label>
-                    <input type="estado" name="estado" id="estado" />
-                </form>
-            </section>
+                            <!-- Nível de Proficiência -->
+                            <div class="form-check form-check-inline">
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    id="inlineCheckbox1"
+                                    value="option1"
+                                />
+                                <label class="form-check-label" for="inlineCheckbox1"
+                                    >1</label
+                                >
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    id="inlineCheckbox2"
+                                    value="option2"
+                                />
+                                <label class="form-check-label" for="inlineCheckbox2"
+                                    >2</label
+                                >
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    id="inlineCheckbox3"
+                                    value="option3"
+                                    disabled
+                                />
+                                <label class="form-check-label" for="inlineCheckbox3"
+                                    >3 (disabled)</label
+                                >
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+            </div>
         </div>
 
-        <!-- DIV PRINCIPAL 2-->
+        <!-- Seção: O Projeto -->
         <div class="container-fluid">
-            <!-- O Projeto -->
             <div class="row background-projeto">
                 <div class="col-2"></div>
-                <div class="col-sm-8">
+                <div class="col">
                     <div class="row">
                         <div class="col">
-                            <img src="./imagens/code-projeto.png" alt="" />
+                            <img
+                                src="./imagens/code-projeto.png"
+                                alt="Imagem do Projeto"
+                            />
                         </div>
 
                         <div class="col conten-project-copy">
@@ -102,18 +172,21 @@
                 <div class="col-2"></div>
             </div>
 
-            <!-- ROW PROBLEMA -->
-            <div class="row background-gray">
+            <!-- Seção: O Problema -->
+            <div class="row background-gray py-5">
                 <div class="col-2"></div>
-                <div class="col-sm-8">
+                <div class="col-8">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col">
                                 <div class="img-problem">
-                                    <img src="./imagens/veia.png" alt="" />
+                                    <img
+                                        src="./imagens/mulher.png"
+                                        alt="Imagem do Problema"
+                                    />
                                 </div>
                             </div>
-                            <div class="col items-center">
+                            <div class="col p-4 items-center">
                                 <div class="problem-content">
                                     <h1>O Problema</h1>
                                     <p class="subtitle">
@@ -143,15 +216,15 @@
                 <div class="col-2"></div>
             </div>
 
-            <!-- CARDS ROW -->
-            <div class="row negative-row">
+            <!-- Seção: Oportunidades e Comunidade -->
+            <div class="row negative-row py-5">
                 <div class="col-2"></div>
-                <div class="col-sm-8">
+                <div class="col-8">
                     <div class="container">
-                        <div class="row">
+                        <div class="row g-4">
                             <div class="col">
                                 <div class="card-large">
-                                    <h1 class="background-numbers">Oportunidade</h1>
+                                    <h1 class="background-numbers-1">Oportunidade</h1>
                                     <span>
                                         Acreditamos que a combinação de interesse,
                                         dedicação e oportunidade pode causar um grande
@@ -161,7 +234,7 @@
                             </div>
                             <div class="col">
                                 <div class="card-large">
-                                    <h1 class="background-numbers">Comunidade</h1>
+                                    <h1 class="background-numbers-2">Comunidade</h1>
                                     <span>
                                         Dentro de um grupo de pessoas mais experientes e
                                         acessíveis, a curva de aprendizado ocorre de forma
@@ -171,7 +244,7 @@
                             </div>
                             <div class="col">
                                 <div class="card-large">
-                                    <h1 class="background-numbers">Experiencia Real</h1>
+                                    <h1 class="background-numbers-3">Experiencia Real</h1>
                                     <span>
                                         Entendemos que somente as experiências reais
                                         poderão trazer a bagagem que a teoria não o pode
@@ -185,22 +258,24 @@
                 <div class="col-2"></div>
             </div>
 
-            <!-- Jornada -->
-
+            <!-- Seção: Sua Jornada -->
             <div class="row">
-                <div class="title-journey background-title">
+                <div class="title-journey background-title py-3">
                     <h1>Sua Jornada</h1>
                 </div>
             </div>
-
             <div class="row">
                 <div class="col-2"></div>
-                <div class="col-sm-8">
+                <div class="col-8">
                     <div class="conteiner">
-                        <div class="row">
-                            <div class="col">
-                                <div class="card-journey">
-                                    <img src="./imagens/calendario-icon.png" alt="" />
+                        <div class="row g-4">
+                            <div class="col-xxl-4 col-md-6">
+                                <div class="card-journey p-4">
+                                    <img
+                                        src="./imagens/calendar-icon.png"
+                                        alt="Ícone Calendário"
+                                        class=""
+                                    />
                                     <span
                                         >Programas de 4 meses de duração, sendo 6
                                         horas/dia.</span
@@ -208,28 +283,38 @@
                                 </div>
                             </div>
 
-                            <div class="col">
-                                <div class="card-journey">
-                                    <img src="./imagens/star-icon.png" alt="" />
+                            <div class="col-xxl-4 col-md-6">
+                                <div class="card-journey p-4">
+                                    <img
+                                        src="./imagens/star-icon.png"
+                                        alt="Ícone Estrela"
+                                        class=""
+                                    />
                                     <span>Do Zero ao Junior Promissor em 4 meses.</span>
                                 </div>
                             </div>
 
-                            <div class="col">
-                                <div class="card-journey">
-                                    <img src="./imagens/clock-icon.png" alt="" />
+                            <div class="col-xxl-4 col-md-6">
+                                <div class="card-journey p-4">
+                                    <img
+                                        src="./imagens/clock-icon.png"
+                                        alt="Ícone Relógio"
+                                        class=""
+                                    />
                                     <span
                                         >640 horas de aplicação prática dos
                                         conceitos.</span
                                     >
                                 </div>
                             </div>
-                        </div>
-                        <br />
-                        <div class="row">
-                            <div class="col">
-                                <div class="card-journey">
-                                    <img src="./imagens/card-icon.png" alt="" />
+
+                            <div class="col-xxl-4 col-md-6">
+                                <div class="card-journey p-4">
+                                    <img
+                                        src="./imagens/card-icon.png"
+                                        alt="Ícone Cartão"
+                                        class=""
+                                    />
                                     <span
                                         >Programas de 4 meses de duração, sendo 6
                                         horas/dia.</span
@@ -237,16 +322,24 @@
                                 </div>
                             </div>
 
-                            <div class="col">
-                                <div class="card-journey">
-                                    <img src="./imagens/peoplo-icon.png" alt="" />
+                            <div class="col-xxl-4 col-md-6">
+                                <div class="card-journey p-4">
+                                    <img
+                                        src="./imagens/peoplo-icon.png"
+                                        alt="Ícone Pessoas"
+                                        class=""
+                                    />
                                     <span>Do Zero ao Junior Promissor em 4 meses.</span>
                                 </div>
                             </div>
 
-                            <div class="col">
-                                <div class="card-journey">
-                                    <img src="./imagens/target-icon.png" alt="" />
+                            <div class="col-xxl-4 col-md-6">
+                                <div class="card-journey p-4">
+                                    <img
+                                        src="./imagens/target-icon.png"
+                                        alt="Ícone alvo"
+                                        class=""
+                                    />
                                     <span
                                         >640 horas de aplicação prática dos
                                         conceitos.</span
@@ -260,105 +353,111 @@
             </div>
 
             <!-- Buttom Selection Process -->
-            <div class="row">
-                <div class="button-SelectionProcess">
-                    <button>
+            <div class="row justify-content-center my-4">
+                <div class="col-12 col-md-auto d-flex button-SelectionProcess">
+                    <button class="btn btn-primary mb-3">
                         Quero me cadastrar para o <span>Processo Seletivo</span> ->
                     </button>
-                    <img src="./imagens/buttoneffect.png" alt="" />
+                    <img src="./imagens/buttoneffect.png" alt="Button Effect" />
                 </div>
             </div>
 
+            <!-- Seção: Objetivos -->
             <div class="row background-blue">
                 <div class="col-2"></div>
-                <div class="col-sm-8">
-                    <div class="title-obective">
-                        <h1>Objetivos</h1>
-                    </div>
-
-                    <div class="row">
-                        <div class="col">
-                            <div class="card-large no-shadow">
-                                <h1 class="no-img">Otimizar</h1>
-                                <span>
-                                    Otimizar todo processo de contratação chegando a
-                                    contribuir com uma economia de 40% no processo de
-                                    recrutamento.
-                                </span>
-                            </div>
+                <div class="col-8 py-3">
+                    <div class="container">
+                        <div class="title-obective">
+                            <h1>Objetivos</h1>
                         </div>
 
-                        <div class="col">
-                            <div class="card-large no-shadow">
-                                <h1>Gerar</h1>
-                                <span>
-                                    Gerar novas oportunidades de carreira para pessoas
-                                    interessadas em ingressar na área ou migrar de outras
-                                    áreas que esteja descontente.
-                                </span>
+                        <div class="row g-4">
+                            <div class="col-xxl-4 col-md-6 col-xs-12">
+                                <div class="card-large no-shadow">
+                                    <h1 class="no-img">Otimizar</h1>
+                                    <span>
+                                        Otimizar todo processo de contratação chegando a
+                                        contribuir com uma economia de 40% no processo de
+                                        recrutamento.
+                                    </span>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="col">
-                            <div class="card-large no-shadow">
-                                <h1>Filtrar</h1>
-                                <span>
-                                    Criar oportunidades brilhantes para profissionais que
-                                    se destacarem junto a parceiros estratégicos de
-                                    negócios.
-                                </span>
+                            <div class="col-xxl-4 col-md-6 col-xs-12">
+                                <div class="card-large no-shadow">
+                                    <h1>Gerar</h1>
+                                    <span>
+                                        Gerar novas oportunidades de carreira para pessoas
+                                        interessadas em ingressar na área ou migrar de
+                                        outras áreas que esteja descontente.
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="col-xxl-4 col-md-12 col-xs-12">
+                                <div class="card-large no-shadow">
+                                    <h1>Filtrar</h1>
+                                    <span>
+                                        Criar oportunidades brilhantes para profissionais
+                                        que se destacarem junto a parceiros estratégicos
+                                        de negócios.
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-2"></div>
             </div>
-            <!-- Fazer o footer-->
 
-            <div class="row background-black">
+            <!-- Fazer o footer-->
+            <div class="row background-black py-4.5">
                 <div class="col-2"></div>
                 <div class="col-8">
                     <div class="row">
-                        <div class="col">
+                        <!-- Coluna da Logo e Ícones Sociais -->
+                        <div class="col-4">
                             <img
                                 class="logo-footer"
                                 src="./imagens/logo-footer.png"
-                                alt="Logo do footer"
+                                alt="Logo Netuno"
                             />
-                            <!-- Colocar os icons -->
-                            <br />
-                            <a class="icon" href="" target="_blank">
-                                <img
-                                    src="./imagens/facebook-icon.png"
-                                    alt="Icone do facebook"
-                                />
-                            </a>
 
-                            <a class="icon" href="#" target="_blank">
-                                <img
-                                    src="./imagens/instagram-icon.png"
-                                    alt="Icone do Instagram"
-                                />
-                            </a>
+                            <div class="social-icons">
+                                <a class="" href="" target="_blank">
+                                    <img
+                                        src="./imagens/facebook-icon.png"
+                                        alt="Icone do facebook"
+                                    />
+                                </a>
 
-                            <a class="icon" href="#" target="_blank">
-                                <img
-                                    src="./imagens/linkdin-icon.png"
-                                    alt="Icone do LinkDin"
-                                />
-                            </a>
-                            <br />
-                            <span class="rights-copy"
-                                >Netuno© 2022 - Todos os direitos reservados</span
-                            >
+                                <a class="" href="#" target="_blank">
+                                    <img
+                                        src="./imagens/instagram-icon.png"
+                                        alt="Icone do Instagram"
+                                    />
+                                </a>
+
+                                <a class="" href="#" target="_blank">
+                                    <img
+                                        src="./imagens/linkdin-icon.png"
+                                        alt="Icone do LinkDin"
+                                    />
+                                </a>
+                            </div>
+                            <span class="copywriting">
+                                Netuno© 2022 - Todos os direitos reservados
+                            </span>
                         </div>
 
-                        <div class="col button-footer">
-                            <button>Processo Seletivo</button>
+                        <!-- Coluna do Botão de Processo Seletivo -->
+                        <div class="col-3">
+                            <button class="button-white">Processo Seletivo</button>
                         </div>
 
-                        <div class="col list-footer">
-                            <ul>
+                        <!-- Coluna dos Links do Footer -->
+                        <div class="col-2 border-right">
+                            <ul class="list-footer">
                                 <li><a href="#">O Projeto</a></li>
                                 <li><a href="#">O Problema</a></li>
                                 <li><a href="#">Sua Jornada</a></li>
@@ -366,7 +465,8 @@
                             </ul>
                         </div>
 
-                        <div class="col list-contat">
+                        <!-- Coluna de Contato -->
+                        <div class="col-3 contacts">
                             <h5>Contato</h5>
                             <span>11 91234.5678</span>
                             <span>contato@netuno.com.br</span>
