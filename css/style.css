@@ -9,7 +9,6 @@
     --color-copy: #000000;
     --color-primary: #6cbff2;
     --color-secondary: #f9f9f9;
-    --default-padding: 1rem;
 }
 
 /* Estilos Globais */
@@ -370,7 +369,7 @@ body {
 }
 
 .border-right {
-    border-right: 1px solid var(--color-secondary);
+    border-right: 1px solid #424242;
 }
 
 .list-footer {
@@ -392,7 +391,26 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding-left: 40px;
+    padding-left: 50px;
+}
+
+@media screen and (max-width: 600px) {
+    .button-white {
+        margin: 20px 0;
+    }
+
+    .border-right {
+        border: none;
+    }
+
+    .list-footer {
+        padding-top: 20px;
+        padding-left: 0;
+    }
+    .contacts {
+        padding-top: 20px;
+        padding-left: 0px;
+    }
 }
 
 .contacts h5 {
