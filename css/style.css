@@ -19,8 +19,7 @@ body {
 
 /* Cabeçalho */
 .background-header {
-    background-color: rgb(39, 138, 199);
-    border-bottom: 2px solid black;
+    background-color: #1a7fbd;
     padding: 20px 0;
 }
 
@@ -31,14 +30,35 @@ body {
 
 .list-menu {
     padding-top: 15px;
+    padding-left: 0px;
     list-style: none;
     display: flex;
-    gap: 50px;
+    gap: 25px;
 }
 
 .list-menu li a {
     color: var(--color-secondary);
     text-decoration: none;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 600px) {
+    .img-logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .list-menu {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .container-button {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .button-black {
@@ -51,9 +71,177 @@ body {
     float: right;
 }
 
+.background-form {
+    background-image: url(../imagens/background-start.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container-form {
+    margin-top: 10vh;
+    border-radius: 10px;
+    background-color: var(--color-secondary);
+    opacity: 0.8;
+    padding-bottom: 20px;
+}
+
+.container-form .title {
+    color: #cecece;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px 20px 0;
+}
+
+.form-register {
+    padding: 20px;
+}
+
+.form-register .subtitle {
+    color: #1a7fbd;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-register .input-group {
+    margin: 10px 0;
+}
+
+.form-register .input-group .input-group-text {
+    background: #fff !important;
+    border-right: 0px;
+}
+
+.form-register .input-group .form-control {
+    border-left: 0px;
+}
+
+.form-register .form-select {
+    margin: 0px !important;
+    border-left: 0px !important;
+    font-size: 1rem;
+}
+
+.form-proficiency {
+    background-color: #1a7fbd;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-proficiency .subtitle {
+    color: var(--color-secondary);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.form-proficiency .check-inline {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    gap: 10px;
+    color: var(--color-secondary);
+}
+
+.form-proficiency .form-check-input {
+    background-color: transparent;
+}
+
+.form-proficiency .form-check-input:checked {
+    background-color: transparent;
+    border-color: var(--color-secondary);
+}
+
+.programing-knowledge {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #a0a0a0;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.programing-knowledge .subtitle {
+    color: #1a7fbd;
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.check-inline {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.programing-knowledge .check-inline .form-check-label {
+    font-size: 14px;
+    color: #a0a0a0;
+}
+
+.work-experience {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #cecece;
+}
+
+.work-experience .subtitle {
+    color: #1a7fbd;
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.work-experience .check-inline .form-check-label {
+    font-size: 14px;
+    color: #a0a0a0;
+}
+
+.requeired-fields {
+    display: flex;
+    justify-content: center;
+    margin: 5px auto;
+    color: #1a7fbd;
+    font-size: 10px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.footer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+}
+
+.footer-form .btn-primary {
+    background-color: #1a7fbd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+.footer-form .terms {
+    margin: 10px 50px;
+    font-size: 10px;
+    color: #9a9a9a;
+    text-align: center;
+}
+
+.footer-form .terms a {
+    text-decoration: none;
+}
+
 /* Seção: O Projeto */
 .background-projeto {
-    padding: 50px 0;
+    padding: 100px 0 50px;
     background-color: #161616;
     color: var(--color-secondary);
     display: flex;

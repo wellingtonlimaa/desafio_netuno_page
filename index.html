@@ -18,30 +18,33 @@
         />
         <title>Landing Page Netuno</title>
     </head>
+
     <body>
         <!-- Cabeçalho -->
         <div class="container-fluid">
             <div class="row background-header">
                 <div class="col-xl-2 col-xs-1"></div>
                 <div class="col-sm-8">
-                    <div class="row">
-                        <div class="col img-logo">
-                            <img src="imagens/logo-netuno.png" alt="Logo Netuno" />
-                        </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-3 col-xs-12 img-logo">
+                                <img src="imagens/logo-netuno.png" alt="Logo Netuno" />
+                            </div>
 
-                        <div class="col-auto">
-                            <nav class="">
-                                <ul class="list-menu d-flex gap-3">
-                                    <li><a href="">O Projeto</a></li>
-                                    <li><a href="">O Problema</a></li>
-                                    <li><a href="">Sua Jornada</a></li>
-                                    <li><a href="">Objetivos</a></li>
-                                </ul>
-                            </nav>
-                        </div>
+                            <div class="col-xl-6 col-xs-12">
+                                <nav class="">
+                                    <ul class="list-menu">
+                                        <li><a href="">O Projeto</a></li>
+                                        <li><a href="">O Problema</a></li>
+                                        <li><a href="">Sua Jornada</a></li>
+                                        <li><a href="">Objetivos</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
 
-                        <div class="col">
-                            <button class="button-black">Processo Seletivo</button>
+                            <div class="col-xl-3 col-xs-12 container-button">
+                                <button class="button-black">Processo Seletivo</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -53,84 +56,356 @@
 
         <!-- Formulario  -->
         <div class="container-fluid">
-            <div class="row">
+            <div class="row background-form">
                 <div class="col-xl-2 col-xs-1"></div>
                 <div class="col-xl-8 col-xs-10">
-                    <div class="col">
-                        <img src="" alt="" />
-                    </div>
-                    <div class="col formulario">
-                        <form>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Email address</label>
-                                <input
-                                    type="email"
-                                    class="form-control"
-                                    id="exampleInputEmail1"
-                                    aria-describedby="emailHelp"
-                                    placeholder="Enter email"
-                                />
-                                <small id="emailHelp" class="form-text text-muted"
-                                    >We'll never share your email with anyone else.</small
-                                >
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Password</label>
-                                <input
-                                    type="password"
-                                    class="form-control"
-                                    id="exampleInputPassword1"
-                                    placeholder="Password"
-                                />
-                            </div>
-                            <div class="form-group form-check">
-                                <input
-                                    type="checkbox"
-                                    class="form-check-input"
-                                    id="exampleCheck1"
-                                />
-                                <label class="form-check-label" for="exampleCheck1"
-                                    >Check me out</label
-                                >
-                            </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                    <div class="row">
+                        <div class="col-xl-7 col-xs-0"></div>
+                        <div class="col-xl-5 col-xs-12">
+                            <div class="container-form">
+                                <h3 class="title">Formulário de Cadastro</h3>
 
-                            <!-- Nível de Proficiência -->
-                            <div class="form-check form-check-inline">
-                                <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    id="inlineCheckbox1"
-                                    value="option1"
-                                />
-                                <label class="form-check-label" for="inlineCheckbox1"
-                                    >1</label
-                                >
+                                <form class="form-register">
+                                    <span class="subtitle">Preencha seu dados</span>
+                                    <div class="input-group flex-nowrap">
+                                        <span
+                                            class="input-group-text"
+                                            id="addon-wrapping"
+                                        >
+                                            <svg
+                                                width="13"
+                                                height="15"
+                                                viewBox="0 0 13 15"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M7.89286 8.90627H5.10714C2.28661 8.90627 0 11.2149 0 14.0625C0 14.5802 0.415826 15 0.928571 15H12.0714C12.5842 15 13 14.5802 13 14.0625C13 11.2149 10.7134 8.90627 7.89286 8.90627ZM1.42158 13.5938C1.65083 11.7451 3.21518 10.3125 5.10714 10.3125H7.89286C9.78366 10.3125 11.3489 11.7466 11.5781 13.5938H1.42158ZM6.5 7.50002C8.55127 7.50002 10.2143 5.82101 10.2143 3.75002C10.2143 1.67902 8.55127 1.52588e-05 6.5 1.52588e-05C4.44873 1.52588e-05 2.78571 1.67902 2.78571 3.75002C2.78571 5.8213 4.44844 7.50002 6.5 7.50002ZM6.5 1.40627C7.77998 1.40627 8.82143 2.45773 8.82143 3.75002C8.82143 5.0423 7.77998 6.09377 6.5 6.09377C5.22002 6.09377 4.17857 5.04201 4.17857 3.75002C4.17857 2.45773 5.22031 1.40627 6.5 1.40627Z"
+                                                    fill="#1A7FBD"
+                                                />
+                                            </svg>
+                                        </span>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            placeholder="Nome completo"
+                                            aria-label="Nome completo"
+                                            aria-describedby="addon-wrapping"
+                                        />
+                                    </div>
+                                    <div class="input-group flex-nowrap">
+                                        <span
+                                            class="input-group-text"
+                                            id="addon-wrapping"
+                                        >
+                                            <svg
+                                                width="14"
+                                                height="11"
+                                                viewBox="0 0 14 11"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M0 1.83335C0 0.820718 0.783399 1.52588e-05 1.75 1.52588e-05H12.25C13.2152 1.52588e-05 14 0.820718 14 1.83335V9.16668C14 10.1779 13.2152 11 12.25 11H1.75C0.783399 11 0 10.1779 0 9.16668V1.83335ZM1.3125 1.83335V2.46642L6.0293 6.52267C6.59258 7.00965 7.40742 7.00965 7.9707 6.52267L12.6875 2.46642V1.80757C12.6875 1.58127 12.4906 1.34923 12.25 1.34923H1.75C1.50828 1.34923 1.3125 1.58127 1.3125 1.80757V1.83335ZM1.3125 4.24533V9.16668C1.3125 9.41877 1.50828 9.62502 1.75 9.62502H12.25C12.4906 9.62502 12.6875 9.41877 12.6875 9.16668V4.24533L8.80469 7.58543C7.75469 8.48778 6.24531 8.48778 5.1707 7.58543L1.3125 4.24533Z"
+                                                    fill="#1A7FBD"
+                                                />
+                                            </svg>
+                                        </span>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            placeholder="E-mail"
+                                            aria-label="E-mail"
+                                            aria-describedby="addon-wrapping"
+                                        />
+                                    </div>
+                                    <div class="input-group flex-nowrap">
+                                        <span
+                                            class="input-group-text"
+                                            id="addon-wrapping"
+                                        >
+                                            <svg
+                                                width="13"
+                                                height="13"
+                                                viewBox="0 0 13 13"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M6.50015 3.86393C6.71397 3.86393 6.91904 3.78371 7.07024 3.64094C7.22143 3.49816 7.30638 3.30451 7.30638 3.10259C7.30638 2.90067 7.22143 2.70702 7.07024 2.56424C6.91904 2.42146 6.71397 2.34124 6.50015 2.34124C6.28632 2.34124 6.08125 2.42146 5.93006 2.56424C5.77886 2.70702 5.69392 2.90067 5.69392 3.10259C5.69392 3.30451 5.77886 3.49816 5.93006 3.64094C6.08125 3.78371 6.28632 3.86393 6.50015 3.86393ZM7.29133 0.265322C7.0677 0.0937006 6.78831 1.52588e-05 6.50015 1.52588e-05C6.21198 1.52588e-05 5.9326 0.0937006 5.70897 0.265322L0.331956 4.39179C-0.321627 4.89529 0.0546128 5.89417 0.897391 5.89417H1.12529V10.1577C0.486752 10.4653 0.0503128 11.0916 0.0503128 11.8154V12.4925C0.0503128 12.6271 0.106941 12.7562 0.207739 12.8514C0.308537 12.9465 0.445249 13 0.587799 13H12.4125C12.555 13 12.6918 12.9465 12.7926 12.8514C12.8934 12.7562 12.95 12.6271 12.95 12.4925V11.8154C12.95 11.0926 12.5135 10.4653 11.875 10.1577V5.89417H12.1029C12.9457 5.89417 13.3219 4.89427 12.6673 4.39179L7.2924 0.264307L7.29133 0.265322ZM6.38835 1.05306C6.4203 1.02866 6.46014 1.01536 6.50122 1.01536C6.54231 1.01536 6.58215 1.02866 6.61409 1.05306L11.5966 4.87905H1.40263L6.38835 1.05204V1.05306ZM10.8 9.95465H9.72506V5.89417H10.8V9.95465ZM8.65009 9.95465H7.03763V5.89417H8.65009V9.95465ZM5.96266 9.95465H4.3502V5.89417H5.96266V9.95465ZM10.9796 10.9698C11.474 10.9698 11.875 11.3484 11.875 11.8154V11.9849H1.12529V11.8154C1.12529 11.3484 1.52625 10.9698 2.02074 10.9698H10.9796ZM3.27523 9.95465H2.20026V5.89417H3.27523V9.95465Z"
+                                                    fill="#1A7FBD"
+                                                />
+                                            </svg>
+                                        </span>
+                                        <select
+                                            class="form-select form-select-lg mb-3"
+                                            aria-label=".form-select-lg example"
+                                        >
+                                            <option selected>Selecione um estado</option>
+                                            <option value="AC">Acre</option>
+                                            <option value="AL">Alagoas</option>
+                                            <option value="AP">Amapá</option>
+                                            <option value="AM">Amazonas</option>
+                                            <option value="BA">Bahia</option>
+                                            <option value="CE">Ceará</option>
+                                            <option value="DF">Distrito Federal</option>
+                                            <option value="ES">Espírito Santo</option>
+                                            <option value="GO">Goiás</option>
+                                            <option value="MA">Maranhão</option>
+                                            <option value="MT">Mato Grosso</option>
+                                            <option value="MS">Mato Grosso do Sul</option>
+                                            <option value="MG">Minas Gerais</option>
+                                            <option value="PA">Pará</option>
+                                            <option value="PB">Paraíba</option>
+                                            <option value="PR">Paraná</option>
+                                            <option value="PE">Pernambuco</option>
+                                            <option value="PI">Piauí</option>
+                                            <option value="RJ">Rio de Janeiro</option>
+                                            <option value="RN">
+                                                Rio Grande do Norte
+                                            </option>
+                                            <option value="RS">Rio Grande do Sul</option>
+                                            <option value="RO">Rondônia</option>
+                                            <option value="RR">Roraima</option>
+                                            <option value="SC">Santa Catarina</option>
+                                            <option value="SP">São Paulo</option>
+                                            <option value="SE">Sergipe</option>
+                                            <option value="TO">Tocantins</option>
+                                        </select>
+                                    </div>
+                                </form>
+
+                                <div class="form-proficiency">
+                                    <span class="subtitle">Nível de Proficiência</span>
+
+                                    <div class="check-inline">
+                                        <div class="form-check">
+                                            <input
+                                                class="form-check-input"
+                                                type="radio"
+                                                name="flexRadio1"
+                                                id="flexRadio1"
+                                            />
+                                            <label
+                                                class="form-check-label"
+                                                for="flexRadio1"
+                                            >
+                                                Básico
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input
+                                                class="form-check-input"
+                                                type="radio"
+                                                name="flexRadio2"
+                                                id="flexRadio2"
+                                            />
+                                            <label
+                                                class="form-check-label"
+                                                for="flexRadio2"
+                                            >
+                                                Médio
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input
+                                                class="form-check-input"
+                                                type="radio"
+                                                name="flexRadio3"
+                                                id="flexRadio3"
+                                                checked
+                                            />
+                                            <label
+                                                class="form-check-label"
+                                                for="flexRadio3"
+                                            >
+                                                Avançado
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="programing-knowledge">
+                                    <span class="subtitle"
+                                        >Conhecimento de Programação*</span
+                                    >
+
+                                    <div class="check-inline">
+                                        <div class="form-check">
+                                            <input
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                value=""
+                                                id="flexCheck1"
+                                            />
+                                            <label
+                                                class="form-check-label"
+                                                for="flexCheck1"
+                                            >
+                                                Java
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                value=""
+                                                id="flexCheck2"
+                                            />
+                                            <label
+                                                class="form-check-label"
+                                                for="flexCheck2"
+                                            >
+                                                Python
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                value=""
+                                                id="flexCheck3"
+                                                checked
+                                            />
+                                            <label
+                                                class="form-check-label"
+                                                for="flexCheck3"
+                                            >
+                                                Javascript
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                value=""
+                                                id="flexCheck4"
+                                                checked
+                                            />
+                                            <label
+                                                class="form-check-label"
+                                                for="flexCheck4"
+                                            >
+                                                Java
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="check-inline">
+                                        <div class="form-check">
+                                            <input
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                value=""
+                                                id="flexCheck1"
+                                            />
+                                            <label
+                                                class="form-check-label"
+                                                for="flexCheck1"
+                                            >
+                                                Python
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                value=""
+                                                id="flexCheck2"
+                                            />
+                                            <label
+                                                class="form-check-label"
+                                                for="flexCheck2"
+                                            >
+                                                Javascript
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                value=""
+                                                id="flexCheck3"
+                                                checked
+                                            />
+                                            <label
+                                                class="form-check-label"
+                                                for="flexCheck3"
+                                            >
+                                                Java
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                value=""
+                                                id="flexCheck4"
+                                                checked
+                                            />
+                                            <label
+                                                class="form-check-label"
+                                                for="flexCheck4"
+                                            >
+                                                Python
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="work-experience">
+                                    <span class="subtitle"
+                                        >Já trabalhou com desenvolvimento?</span
+                                    >
+
+                                    <div class="check-inline">
+                                        <div class="form-check">
+                                            <input
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                value=""
+                                                id="flexCheck1"
+                                            />
+                                            <label
+                                                class="form-check-label"
+                                                for="flexCheck1"
+                                            >
+                                                Sim
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                value=""
+                                                id="flexCheck2"
+                                            />
+                                            <label
+                                                class="form-check-label"
+                                                for="flexCheck2"
+                                            >
+                                                Não
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <span class="requeired-fields">
+                                    Campos obrigatórios*
+                                </span>
+
+                                <div class="footer-form">
+                                    <button type="button" class="btn btn-primary">
+                                        Enviar
+                                    </button>
+                                    <span class="terms">
+                                        Ao clicar em enviar, você concordo com os todos os
+                                        termos de uso de dados descrito em
+                                        <a href="#">olítica de Privacidade</a>
+                                    </span>
+                                </div>
                             </div>
-                            <div class="form-check form-check-inline">
-                                <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    id="inlineCheckbox2"
-                                    value="option2"
-                                />
-                                <label class="form-check-label" for="inlineCheckbox2"
-                                    >2</label
-                                >
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    id="inlineCheckbox3"
-                                    value="option3"
-                                    disabled
-                                />
-                                <label class="form-check-label" for="inlineCheckbox3"
-                                    >3 (disabled)</label
-                                >
-                            </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
                 <div class="col-xl-2 col-xs-1"></div>
