@@ -25,8 +25,7 @@ A página conta com:
 
 ## 🚀 Demonstração
 
-🔗 **Acesse o projeto online:** [Clique aqui para visualizar](#)  
-_(adicione o link quando fizer o deploy no GitHub Pages, Netlify ou Vercel)_
+🔗 **Acesse o projeto online:** [https://wellingtonlimaa.github.io/desafio_netuno_page/](#)  
 
 ---
 
@@ -44,7 +43,7 @@ _(adicione o link quando fizer o deploy no GitHub Pages, Netlify ou Vercel)_
 
 ![alt text](image.png)
 
-desafio_netuno_page/
+<!-- desafio_netuno_page/
 ├── css/
 │ └── estilos.css
 ├── imagens/
@@ -56,5 +55,5 @@ desafio_netuno_page/
 ├── README.md
 ├── LICENSE
 ├── .prettierrc
-└── .gitattributes
+└── .gitattributes -->
 
