@@ -25,7 +25,7 @@ A página conta com:
 
 ## 🚀 Demonstração
 
-🔗 **Acesse o projeto online:** [https://wellingtonlimaa.github.io/desafio_netuno_page/](#)  
+🔗 **Acesse o projeto online:** [Clique aqui para visualizar](https://wellingtonlimaa.github.io/desafio_netuno_page/)  
 
 ---
 
